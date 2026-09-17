@@ -1,0 +1,25 @@
+[package]
+name    = "noirnet-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "noirnet-cli"
+path = "src/main.rs"
+
+[dependencies]
+noirnet-types   = { workspace = true }
+noirnet-crypto  = { workspace = true }
+noirnet-wallet  = { workspace = true }
+noirnet-rpc     = { workspace = true }
+clap            = { workspace = true }
+tokio           = { workspace = true }
+tracing         = { workspace = true }
+tracing-subscriber = { workspace = true }
+hex             = { workspace = true }
+bincode         = { workspace = true }
+serde_json      = { workspace = true }
+jsonrpsee       = { workspace = true }
+rand            = { workspace = true }
+reqwest         = { workspace = true }
+bs58            = { workspace = true }

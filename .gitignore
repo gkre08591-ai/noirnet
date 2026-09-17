@@ -1,0 +1,43 @@
+# Rust / Cargo build artifacts
+# NOTE: target/ is INTENTIONALLY tracked (push ready debug binaries).
+# Heavy binaries >100 MB are kept LOCALLY only (GitHub blocks >100 MB files).
+# Re-build with: cargo build --release
+
+# exclude heavy debug binaries (>100 MB GitHub limit)
+/target/**/noirnet-cli
+/target/**/noirnet-node-cli
+**/noirnet-cli
+**/noirnet-node-cli
+
+# NoirNet runtime data
+/data/
+/data1/
+/data2/
+/node.log
+
+# Wallet files
+/noirnet_wallet.json
+
+# Temporary/debug files
+/temp_execute.txt
+/expanded.rs
+/test_jsonrpsee.rs
+
+# Local environment files
+.env
+.env.*
+
+# Editor cruft
+*.swp
+*.bak
+*.orig
+*~
+.DS_Store
+
+# Build cache
+*.d.bk
+
+# Internal git folder (we run git from this dir)
+
+# Nested git submodules
+contracts/token/.git/

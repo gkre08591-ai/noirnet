@@ -1,0 +1,25 @@
+[package]
+name    = "noirnet-rpc"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+noirnet-types   = { workspace = true }
+noirnet-mempool = { workspace = true }
+noirnet-storage = { workspace = true }
+jsonrpsee       = { workspace = true }
+tokio           = { workspace = true }
+tracing         = { workspace = true }
+thiserror       = { workspace = true }
+serde           = { workspace = true }
+serde_json      = { workspace = true }
+hex             = { workspace = true }
+bincode         = { workspace = true }
+http            = { workspace = true }
+tower           = { workspace = true }
+tower-http      = { workspace = true }
+axum            = { workspace = true }
+dashmap         = { workspace = true }
+prometheus      = { workspace = true }
+anyhow          = { workspace = true }
+noirnet-network = { workspace = true }

@@ -1,0 +1,24 @@
+[package]
+name    = "noirnet-crypto"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+noirnet-types     = { workspace = true }
+blake3            = { workspace = true }
+sha3              = { workspace = true }
+ed25519-dalek     = { workspace = true }
+x25519-dalek      = { workspace = true }
+chacha20poly1305  = { workspace = true }
+rand              = { workspace = true }
+rand_core         = { workspace = true }
+zeroize           = { workspace = true }
+subtle            = { workspace = true }
+serde             = { workspace = true }
+hex               = { workspace = true }
+thiserror         = { workspace = true }
+blst              = { workspace = true }
+ark-ff            = { workspace = true }
+ark-ec            = { workspace = true }
+ark-bn254         = { workspace = true }
+ark-std           = { workspace = true }

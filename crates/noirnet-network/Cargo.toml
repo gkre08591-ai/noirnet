@@ -1,0 +1,15 @@
+[package]
+name    = "noirnet-network"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+noirnet-types  = { workspace = true }
+libp2p         = { workspace = true }
+tokio          = { workspace = true }
+futures        = { workspace = true }
+tracing        = { workspace = true }
+thiserror      = { workspace = true }
+bincode        = { workspace = true }
+serde          = { workspace = true }
+rand           = { workspace = true }

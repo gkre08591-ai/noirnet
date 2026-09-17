@@ -1,0 +1,21 @@
+[package]
+name    = "noirnet-node-cli"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+noirnet-types     = { workspace = true }
+noirnet-crypto    = { workspace = true }
+noirnet-storage   = { workspace = true }
+noirnet-network   = { workspace = true }
+noirnet-consensus = { workspace = true }
+noirnet-mempool   = { workspace = true }
+noirnet-rpc       = { workspace = true }
+tokio             = { workspace = true }
+tracing           = { workspace = true }
+tracing-subscriber= { workspace = true }
+tracing-appender  = { workspace = true }
+clap              = { workspace = true }
+libp2p            = { workspace = true }
+anyhow            = { workspace = true }
+mimalloc          = { workspace = true }

@@ -1,0 +1,22 @@
+[package]
+name    = "noirnet-wallet"
+version.workspace = true
+edition.workspace = true
+
+[features]
+default = []
+hsm = []
+
+[dependencies]
+noirnet-types   = { workspace = true }
+noirnet-crypto  = { workspace = true }
+noirnet-zk      = { workspace = true }
+thiserror       = { workspace = true }
+tracing         = { workspace = true }
+tokio           = { workspace = true }
+rand            = { workspace = true }
+blake3          = { workspace = true }
+argon2          = { workspace = true }
+chacha20poly1305 = { workspace = true }
+zeroize         = { workspace = true }
+pkcs11          = { version = "0.2", optional = true }

@@ -1,0 +1,15 @@
+[package]
+name    = "noirnet-types"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+serde     = { workspace = true }
+hex       = { workspace = true }
+blake3    = { workspace = true }
+thiserror = { workspace = true }
+bytes     = { workspace = true }
+zeroize   = { workspace = true }
+serde-big-array = "0.5.1"
+bincode.workspace = true
+bs58 = "0.5.1"

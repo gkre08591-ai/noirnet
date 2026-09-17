@@ -1,0 +1,19 @@
+[package]
+name    = "noirnet-mempool"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+noirnet-types   = { workspace = true }
+noirnet-crypto  = { workspace = true }
+noirnet-storage = { workspace = true }
+thiserror       = { workspace = true }
+parking_lot     = { workspace = true }
+tracing         = { workspace = true }
+dashmap         = { workspace = true }
+rand            = { workspace = true }
+rand_core       = { workspace = true }
+rayon           = { workspace = true }
+
+[dev-dependencies]
+tempdir = "0.3.7"

@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  noirnet-node:
+    build: .
+    ports:
+      - "7777:7777"
+      - "9000:9000"
+    volumes:
+      - noirnet-data:/data
+    command: ["noirnet-node", "--data-dir", "/data", "--devnet"]
+
+volumes:
+  noirnet-data:
